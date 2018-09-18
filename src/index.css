@@ -1,7 +1,7 @@
 .Sudoku__grid {
   display: grid;
-  grid-template-rows: repeat(9, 60px);
-  grid-template-columns: 360px;
+  grid-template-rows: repeat(9, 80px);
+  /* grid-template-columns: 360px; */
   max-width: 100%;
   margin: 20px auto;
 }
@@ -9,7 +9,7 @@
 .Sudoku__row {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(9, 60px);
+  grid-template-columns: repeat(9, 80px);
 }
 
 .Sudoku__cell {
@@ -44,6 +44,14 @@ input {
   padding: 0;
   list-style: none;
   color: #226666;
+  font-size: 14px;
+}
+.Sudoku__possibilities-list--attention {
+  color: red;
+  font-size: 24px;
 }
 .Sudoku__possibilities-list__possibility {
+  display: inline-block;
+  cursor: pointer;
+  margin: 2px;
 }
