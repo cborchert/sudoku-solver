@@ -1,0 +1,49 @@
+.Sudoku__grid {
+  display: grid;
+  grid-template-rows: repeat(9, 60px);
+  grid-template-columns: 360px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.Sudoku__row {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(9, 60px);
+}
+
+.Sudoku__cell {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  padding: 2px;
+}
+
+.Sudoku__cell:nth-child(3n - 2) {
+  border-left: 4px solid black;
+}
+.Sudoku__row:nth-child(3n - 2) .Sudoku__cell {
+  border-top: 4px solid black;
+}
+.Sudoku__cell:last-child {
+  border-right: 4px solid black;
+}
+.Sudoku__row:last-child .Sudoku__cell {
+  border-bottom: 4px solid black;
+}
+
+input {
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.Sudoku__possibilities-list {
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+  color: #226666;
+}
+.Sudoku__possibilities-list__possibility {
+}
